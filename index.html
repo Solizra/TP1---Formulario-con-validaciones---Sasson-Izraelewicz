@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="post" onsubmit=return VerificarForm()>
+        Nombre Completo: <input type="text" name="nombreCompleto" placeholder="Luis Rodriguez" id="nombreCompleto" onKeyUp="VerificarNombre()"><br>
+        <div id="Caracteres3">obligatorio, mínimo 3 caracteres</div>
+
+        Email: <input type="email" name="email" placeholder="luisrodriguez09@gmail.com" id="email" onKeyUp="VerificarEmail()"><br>
+        <div id="formatoValido">debe tener formato válido<div>
+
+        Contraseña: <input type="password" name="contraseña" id="contraseña" onKeyUp="VerificarContraseña()">  <br>
+        <div id="mas8">Debe contener al menos 8 caracteres</div>
+        <div id="numero">Debe contener al menos 1 numero</div>
+        <div id="letra">Debe contener al menos 1 letra</div>
+
+
+        Confirmar Contraseña: <input type="password" name="confirmarContraseña" id="confirmarContraseña"><br>
+        <div id="coincidir">debe coincidir con la anterior</div>
+
+        <div id="contraseñaNoValida"></div>
+        <input type="submit" name="enviar">
+    </form>
+    
+    <script src="style.css"></script>
+    <script src="script.js"></script>
+</body>
+</html>
