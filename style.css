@@ -1,0 +1,57 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4c9ca7, #a0c1ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    margin: 0;
+  }
+  
+  form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    border-color: #1e2964;
+    box-shadow: 0 0 8px rgba(134, 161, 219, 0.5);
+    outline: none;
+  }
+  
+  #Caracteres3, #formatoValido, #mas8, #numero, #letra, #coincidir, #formNoValido {
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+
+  input[type="submit"] {
+    background: #27208f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background: #81a7ee;
+  }
