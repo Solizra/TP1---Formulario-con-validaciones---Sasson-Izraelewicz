@@ -106,7 +106,6 @@ let ConfirmarContraseña = () =>{
 } 
 
 let VerificarForm =()=>{
-    let formNoValido = document.getElementById("formNoValido");
     if (VerificarNombre() + VerificarEmail() + VerificarContraseña() + ConfirmarContraseña() == 6) {
         alert("registro exitoso");
         return true;
